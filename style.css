@@ -1,0 +1,45 @@
+*{
+    padding:  0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.bar-navig{
+    background-color: #09062F;
+    height: 80px;
+    width: 100%;
+}
+
+label#cinix{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.bar-navig .list-nav{
+    float: right;
+    margin-right: 20px;
+}
+
+.bar-navig .list-nav .nom-list-int{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.bar-navig .list-nav .nom-list-int .nom-list-ref{
+    color:  white;
+    font-size: 17px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.nom-list-ref:hover{
+    background: #1407d1;
+    transition: .5s;
+}
