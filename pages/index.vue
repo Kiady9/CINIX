@@ -1,7 +1,7 @@
 <template>
   <div>
       <div class="row">
-        <h2>Les plus <strong>Populaires</strong></h2>
+        <h2>Les films plus <strong>Populaires</strong></h2>
       </div>
     
     
