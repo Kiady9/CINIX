@@ -1,6 +1,9 @@
 <template>
   <div>
     <div>
+      <p>Ici on met la bar de navigation et la page d'audessus</p>
+    </div>
+    <div>
       <h2>Les plus POPULAIRES</h2>
       <vueper-slides
         class="no-shadow"
@@ -25,9 +28,9 @@
         class="no-shadow"
         :visible-slides="4"
         slide-multiple
-        :gap="3"
+        :gap="2"
         :bullets="false"
-        :slide-ratio="1 / 4"
+        :slide-ratio="1 / 2"
         :dragging-distance="200"
         :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }"
         :image="'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/'+movies.poster_path"
@@ -47,6 +50,7 @@
         :visible-slides="4"
         slide-multiple
         :gap="3"
+        :slideContentOutside="true"
         :bullets="false"
         :slide-ratio="1 / 4"
         :dragging-distance="200"
@@ -60,6 +64,9 @@
         :title=" movie.original_title .toString()" 
         :image="'https://www.themoviedb.org/t/p/w600_and_h900_bestv2'+movie.poster_path" />
       </vueper-slides>
+    </div>
+    <div>
+      <p>Apres je pense sa sera la suite de la page dpnc je sais pas trop</p>
     </div>
   </div>
 
@@ -175,28 +182,26 @@
       padding: 10px;
     }
 
-    .titre-vueperslide{
-      
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
     .vueperslides{
       margin: 25px;
     }
 
     .vueperslide{
       background-repeat: no-repeat;
-      background-size: initial;
+      border-radius: 21px;
     }
 
     .vueperslide__title{
         color: white;
         width: 100%;
-        margin-top: 450px;
+       
+        
     }
 
+    
+
     .vueperslide__content-wrapper {
-        justify-content: flex-end !important;
-      
+        
+      display: flex-end !important;
     }
 </style>
